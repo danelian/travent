@@ -9,15 +9,17 @@ body {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 18px;
-	line-height: 1.2;
+	line-height: 1.22;
 	color: #000000;
 	background: #000000;
 	margin: 0;
 	overflow-x: hidden;
 	position: relative;
+	min-height: 100vh;
 }
 section {
-	margin-bottom: 100px;
+	padding-top: 72px;
+	padding-bottom: 92px;
 }
 @include tablet {
 	section {

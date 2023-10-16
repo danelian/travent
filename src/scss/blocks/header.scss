@@ -168,6 +168,10 @@
   line-height: 30px;
   text-transform: uppercase;
   color: #fff;
+  cursor: pointer;
+  &:hover {
+    color: var(--global-color);
+  }
 }
 
 /* Show menu */
