@@ -5,13 +5,13 @@ html {
 	overflow-x: hidden;
 }
 body {
-	font-family: "Comfortaa", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 17px;
+	font-size: 18px;
 	line-height: 1.2;
-	color: var(--font-color);
-	background: var(--white-color);
+	color: #000000;
+	background: #000000;
 	margin: 0;
 	overflow-x: hidden;
 	position: relative;
@@ -24,14 +24,15 @@ section {
 		margin-bottom: 70px;
 	}
 }
-.row {
-	display: flex;
-	flex-wrap: wrap;
-}
-.container {
+.d-container {
 	margin: 0 auto;
 	padding: 0 var(--container-offset);
 	max-width: var(--container-width);
+}
+.d-container-full {
+	margin: 0 auto;
+	padding: 0 var(--container-offset);
+	max-width: 100%;
 }
 .link-center {
 	display: flex;

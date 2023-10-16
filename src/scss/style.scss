@@ -1,23 +1,13 @@
-/***** FONTS *****/
-@import "fonts";
-
 /***** GENERAL ELEMENTS *****/
-:root {
-  // base
-  --font-family: "Comfortaa", sans-serif;
-  --font-montserrat: "Montserrat-Extrabold", "Comfortaa", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-  --content-width: 1160px;
-  --container-offset: 15px;
+:root {
+  --content-width: 1380px;
+  --container-offset: 30px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
-  --white-color: #ffffff;
-  --black-color: #131313;
-  --lightBlack-color: #292932;
-  --font-color: #131313;
-
-  --global-color: #E88320;
+  --global-color: #D5924B;
   // --green-color: #8BD27C;
   // --red-color: #FF3D00;
 
@@ -47,6 +37,12 @@
   }
 }
 
+@media screen and (max-width: 1440px) {
+  :root {
+    --container-offset: 15px;
+  }
+}
+
 
 /***** BLOCKS GLOBAL *****/
 @import "general";
@@ -54,7 +50,7 @@
 @import "blocks/title";
 
 /***** COMPONENTS GLOBAL *****/
-// @import "blocks/header";
+@import "blocks/header";
 // @import "blocks/footer";
 // @import "blocks/breadcrumbs";
 // @import "blocks/pagination";
@@ -74,80 +70,3 @@
 // @import "blocks/components.scss";
 
 /***** SECTIONS GLOBAL (Widgets) *****/
-
-
-
-@media screen and (max-width: 390px) {
-  :root {
-    --container-offset: 10px;
-  }
-}
-
-
-/***** ICONS *****/
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-burger:before {
-  content: "\e90f";
-}
-.icon-fliter:before {
-  content: "\e910";
-}
-.icon-phone:before {
-  content: "\e90b";
-}
-.icon-place:before {
-  content: "\e90c";
-}
-.icon-postal:before {
-  content: "\e90d";
-}
-.icon-tech:before {
-  content: "\e90e";
-}
-.icon-arrow-next:before {
-  content: "\e900";
-}
-.icon-arrow-prev:before {
-  content: "\e901";
-}
-.icon-cart:before {
-  content: "\e902";
-}
-.icon-checked:before {
-  content: "\e903";
-}
-.icon-chevron:before {
-  content: "\e904";
-}
-.icon-chevron-big:before {
-  content: "\e905";
-}
-.icon-download:before {
-  content: "\e906";
-}
-.icon-remove:before {
-  content: "\e907";
-}
-.icon-search:before {
-  content: "\e908";
-}
-.icon-user:before {
-  content: "\e909";
-}
-.icon-wallet:before {
-  content: "\e90a";
-}

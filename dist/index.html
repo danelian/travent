@@ -28,25 +28,130 @@
 <!-- CSS -->
 <!-- SWIPER -->
 <link href="css/swiper-bundle.min.css" rel="stylesheet">
+<!-- FANCYBOX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 <!-- STYLE CSS -->
 <link href="css/style.min.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
 
-	
+	<!--==================== HEADER ====================-->
+<header class="header" id="header">
+	<nav class="d-container-full header__container">
+		<!-- Toggle button -->
+		<div class="nav__toggle" id="nav-toggle">
+			<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M1 9.63953C1 9.19071 1.15804 8.76028 1.43934 8.44292C1.72064 8.12556 2.10218 7.94727 2.5 7.94727H17.962C18.3598 7.94727 18.7414 8.12556 19.0227 8.44292C19.304 8.76028 19.462 9.19071 19.462 9.63953C19.462 10.0883 19.304 10.5188 19.0227 10.8361C18.7414 11.1535 18.3598 11.3318 17.962 11.3318H2.5C2.10218 11.3318 1.72064 11.1535 1.43934 10.8361C1.15804 10.5188 1 10.0883 1 9.63953ZM1 2.8705C1 2.42169 1.15804 1.99126 1.43934 1.6739C1.72064 1.35654 2.10218 1.17825 2.5 1.17825H23.5C23.8978 1.17825 24.2794 1.35654 24.5607 1.6739C24.842 1.99126 25 2.42169 25 2.8705C25 3.31932 24.842 3.74975 24.5607 4.06711C24.2794 4.38447 23.8978 4.56276 23.5 4.56276H2.5C2.10218 4.56276 1.72064 4.38447 1.43934 4.06711C1.15804 3.74975 1 3.31932 1 2.8705ZM1 16.4086C1 15.9597 1.15804 15.5293 1.43934 15.212C1.72064 14.8946 2.10218 14.7163 2.5 14.7163H23.5C23.8978 14.7163 24.2794 14.8946 24.5607 15.212C24.842 15.5293 25 15.9597 25 16.4086C25 16.8574 24.842 17.2878 24.5607 17.6052C24.2794 17.9225 23.8978 18.1008 23.5 18.1008H2.5C2.10218 18.1008 1.72064 17.9225 1.43934 17.6052C1.15804 17.2878 1 16.8574 1 16.4086ZM1 23.1776C1 22.7288 1.15804 22.2983 1.43934 21.981C1.72064 21.6636 2.10218 21.4853 2.5 21.4853H17.962C18.3598 21.4853 18.7414 21.6636 19.0227 21.981C19.304 22.2983 19.462 22.7288 19.462 23.1776C19.462 23.6264 19.304 24.0568 19.0227 24.3742C18.7414 24.6915 18.3598 24.8698 17.962 24.8698H2.5C2.10218 24.8698 1.72064 24.6915 1.43934 24.3742C1.15804 24.0568 1 23.6264 1 23.1776Z" fill="white"/>
+			</svg>				
+		</div>
+
+		<a href="#" class="header__logo">
+			<img src="./img/header-logo.svg" alt="logo">
+		</a>
+
+		<div class="header__bar">
+			<div class="lang">RU</div>
+			<div class="header__bar-btns">
+				<a href="#">
+					<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M26.1562 7.95C22.2375 1.875 14.2125 0.074999 8.00622 3.84375C1.94997 7.6125 -2.86102e-05 15.825 3.91872 21.8813L4.23747 22.3688L2.92497 27.2813L7.83747 25.9688L8.32497 26.2875C10.4437 27.4313 12.75 28.0875 15.0375 28.0875C17.4937 28.0875 19.95 27.4313 22.0687 26.1188C28.125 22.1813 29.925 14.1375 26.1562 7.9125V7.95ZM22.725 20.5875C22.0687 21.5625 21.2437 22.2188 20.1 22.3875C19.4437 22.3875 18.6187 22.7063 15.3562 21.4125C12.5812 20.1 10.275 17.9625 8.64372 15.5063C7.66872 14.3625 7.16247 12.8813 7.01247 11.4C7.01247 10.0875 7.49997 8.94375 8.32497 8.11875C8.64372 7.8 8.98122 7.63125 9.29997 7.63125H10.125C10.4437 7.63125 10.7812 7.63125 10.95 8.2875C11.2687 9.1125 12.0937 11.0813 12.0937 11.25C12.2625 11.4187 12.1875 12.675 11.4375 13.3875C11.025 13.8562 10.95 13.875 11.1187 14.2125C11.775 15.1875 12.6 16.1812 13.4062 17.0063C14.3812 17.8313 15.375 18.4875 16.5187 18.975C16.8375 19.1438 17.175 19.1438 17.3437 18.8062C17.5125 18.4875 18.3187 17.6625 18.6562 17.325C18.975 17.0063 19.1437 17.0062 19.4812 17.1562L22.1062 18.4688C22.425 18.6375 22.7625 18.7875 22.9312 18.9562C23.1 19.4438 23.1 20.1 22.7625 20.5875H22.725Z" fill="#D5924B"/>
+					</svg>						
+				</a>
+				<a href="#">
+					<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M10.3125 15C12.0384 15 13.4375 13.6009 13.4375 11.875C13.4375 10.1491 12.0384 8.75 10.3125 8.75C8.58661 8.75 7.1875 10.1491 7.1875 11.875C7.1875 13.6009 8.58661 15 10.3125 15Z" stroke="#D5924B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M19.6875 15C21.4134 15 22.8125 13.6009 22.8125 11.875C22.8125 10.1491 21.4134 8.75 19.6875 8.75C17.9616 8.75 16.5625 10.1491 16.5625 11.875C16.5625 13.6009 17.9616 15 19.6875 15Z" stroke="#D5924B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<rect x="1" y="1" width="28" height="28" rx="4" stroke="#D5924B" stroke-width="2"/>
+					</svg>						
+				</a>
+				<a href="#">
+					<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M30 15.0919C30 6.75562 23.2837 -0.00187683 15 -0.00187683C6.71247 -1.83097e-06 -0.00378418 6.75562 -0.00378418 15.0937C-0.00378418 22.6256 5.48247 28.8694 12.6525 30.0019V19.455H8.84622V15.0937H12.6562V11.7656C12.6562 7.98375 14.8968 5.895 18.3225 5.895C19.965 5.895 21.6806 6.18937 21.6806 6.18937V9.90187H19.7887C17.9268 9.90187 17.3456 11.0662 17.3456 12.2606V15.0919H21.5043L20.8406 19.4531H17.3437V30C24.5137 28.8675 30 22.6237 30 15.0919Z" fill="#D5924B"/>
+					</svg>						
+				</a>
+				<a href="#">
+					<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.0015 30C6.71697 30 0.00146484 23.2845 0.00146484 15C0.00146484 6.7155 6.71697 0 15.0015 0C23.286 0 30.0015 6.7155 30.0015 15C30.0015 23.2845 23.286 30 15.0015 30ZM10.3365 16.755L10.356 16.7445L11.661 21.0495C11.829 21.516 12.06 21.6 12.3405 21.561C12.6225 21.5235 12.771 21.372 12.9555 21.195L14.7375 19.473L18.5625 22.305C19.2615 22.6905 19.764 22.491 19.938 21.657L22.425 9.924C22.6995 8.832 22.2165 8.394 21.3705 8.742L6.77097 14.382C5.77497 14.781 5.78097 15.339 6.59097 15.5865L10.3365 16.755Z" fill="#D5924B"/>
+					</svg>
+				</a>
+			</div>
+		</div>
+
+		<div class="nav__menu" id="nav-menu">
+			<div class="nav__head">
+				<img src="./img/header-logo.svg" class="logo" alt="logo">
+				<div class="nav__contacts">
+					<a href="tel:+00000000000" class="phone">+0 000 000 00 00</a>
+					<p class="schedule">пн-вс с 9:00 до 21:00</p>
+					<a href="mailto:e-mail@gmail.com">e-mail@gmail.com</a>
+				</div>
+			</div>
+			<ul class="nav__list">
+				<li><a href="#">M.i.c.e.</a></li>
+				<li><a href="#">Event</a></li>
+				<li><a href="#">DMC</a></li>
+				<li><a href="#">CONCIERGE</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">About us</a></li>
+			</ul>
+			<div class="nav__btns">
+				<a href="#" class="btn-withicon"><img src="/img/icons/phone.svg" alt=""> Получить консультацию</a>
+				<a href="#" class="btn-withicon" download="index.html"><img src="/img/icons/document.svg" alt=""> Скачать презентацию</a>
+			</div>
+
+			<div class="nav__close" id="nav-close">
+				<svg width="13" height="30" viewBox="0 0 13 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M12.1893 7.11653e-08C12.3949 9.14502e-08 12.6054 0.100638 12.7633 0.296075C13.0789 0.686949 13.0789 1.3266 12.7632 1.71747L1.95861 15.1021L12.6054 28.2854C12.9211 28.6763 12.9211 29.316 12.6054 29.7068C12.2897 30.0977 11.7732 30.0977 11.4575 29.7068L0.236751 15.8129C-0.0789183 15.422 -0.0789183 14.7824 0.236751 14.3915L11.6154 0.296162C11.7732 0.100725 11.9836 3.04762e-05 12.1893 3.04965e-05L12.1893 7.11653e-08Z" fill="white"/>
+				</svg>					
+			</div>
+		</div>
+	</nav>
+</header>
 
 	<main>
+		<section class="hero">
+  <div class="d-container">
+    <div class="hero__container">
+      <div class="header__left">
+        <h1 class="hero__title"><span>TRAVENT</span> Event & Mice агентство полного цикла</h1>
+      </div>
+      <a data-fancybox href="https://www.youtube.com/watch?v=4FUnXaq_VWk" class="btn-play">
+        <svg width="40" height="50" viewBox="0 0 40 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#filter0_i_0_1)">
+          <path d="M4.62064 50C3.85306 49.9985 3.09907 49.7798 2.43284 49.3655C0.93263 48.4416 0 46.6481 0 44.7011V5.29913C0 3.34669 0.93263 1.55866 2.43284 0.634747C3.11494 0.208712 3.88981 -0.0103777 4.67647 0.000377766C5.46313 0.0111332 6.23269 0.25134 6.90471 0.695889L37.8903 20.8534C38.536 21.2935 39.0684 21.9046 39.4374 22.6294C39.8064 23.3542 40 24.169 40 24.9974C40 25.8258 39.8064 26.6406 39.4374 27.3654C39.0684 28.0902 38.536 28.7013 37.8903 29.1414L6.89971 49.3044C6.21199 49.7562 5.42427 49.9966 4.62064 50Z" fill="#F4A95A"/>
+          </g>
+          <!-- <path d="M4.62064 50C3.85306 49.9985 3.09907 49.7798 2.43284 49.3655C0.93263 48.4416 0 46.6481 0 44.7011V5.29913C0 3.34669 0.93263 1.55866 2.43284 0.634747C3.11494 0.208712 3.88981 -0.0103777 4.67647 0.000377766C5.46313 0.0111332 6.23269 0.25134 6.90471 0.695889L37.8903 20.8534C38.536 21.2935 39.0684 21.9046 39.4374 22.6294C39.8064 23.3542 40 24.169 40 24.9974C40 25.8258 39.8064 26.6406 39.4374 27.3654C39.0684 28.0902 38.536 28.7013 37.8903 29.1414L6.89971 49.3044C6.21199 49.7562 5.42427 49.9966 4.62064 50Z" fill="white"/>
+          <defs> -->
+          <filter id="filter0_i_0_1" x="0" y="0" width="40" height="54" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+          <feOffset dy="4"/>
+          <feGaussianBlur stdDeviation="2"/>
+          <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+          <feBlend mode="normal" in2="shape" result="effect1_innerShadow_0_1"/>
+          </filter>
+          </svg>          
+      </a>
+      <div class="hero__right">ЭКСПЕРТЫ В ОРГАНИЗАЦИИ МЕРОПРИЯТИЙ В ДУБАЙ И ОАЭ</div>
+    </div>
+  </div>
+</section>
+
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aliquid fugit rem ipsam hic. Ullam nemo labore architecto nesciunt numquam molestiae. Fuga neque asperiores voluptas nobis sunt nam, inventore voluptatibus maxime error totam nostrum laboriosam numquam doloremque nihil reiciendis atque harum, consequatur molestias velit unde exercitationem, consectetur quia. Obcaecati possimus, esse officia quia ullam ipsam, unde omnis explicabo vitae amet soluta quisquam sit suscipit error porro quo sunt rem laboriosam! Nobis, possimus! Quod veniam, consectetur debitis eum at nam, velit rem vel placeat nobis reiciendis odio adipisci est animi dolorum, perspiciatis nisi omnis error fugiat explicabo quibusdam iure cumque fugit. Vero laborum harum earum nulla in. Quisquam, eligendi. Suscipit, officia at voluptatum aliquam odit sapiente voluptatem praesentium culpa ipsa. Eum cumque nulla quibusdam a dolores delectus, debitis accusantium iure temporibus consequatur id! Debitis necessitatibus dignissimos amet pariatur blanditiis. Aliquid dignissimos beatae incidunt qui cum, error quod hic maxime itaque perspiciatis sed laboriosam repellat corporis corrupti quo neque officiis eveniet est repudiandae asperiores tenetur aut, enim porro ratione! Quas, sapiente similique! Ratione rerum nemo repellendus sed hic quos fuga officiis cum minima! Quaerat cupiditate illum laborum! Exercitationem aperiam qui quam dolores consectetur quia quae est eius nulla ipsum, dolor, repudiandae excepturi nostrum voluptas assumenda placeat laborum fugit sed. Aut repellat ratione, a explicabo facere voluptas? Delectus dolore soluta inventore tenetur non odio tempora assumenda reiciendis, eaque error hic, sit excepturi sint temporibus, omnis quis ipsum dicta autem. Nesciunt odio ex, ipsam enim corporis maxime. Molestiae praesentium maiores pariatur earum eaque quaerat in consectetur quia omnis fugiat. Ea et, commodi enim natus quis sed sequi saepe iure deserunt nesciunt maiores nihil debitis tempore architecto veritatis aperiam ipsam beatae asperiores. Nam nesciunt et, vero vitae molestias perspiciatis accusantium explicabo eos inventore, voluptatum voluptas illum iste debitis minima obcaecati! Et quisquam porro sed ab. Non, explicabo earum repudiandae in odio cupiditate aspernatur itaque aperiam vel ea velit tenetur maxime magni! A iusto iure error! Dicta ullam ea laboriosam beatae voluptates suscipit iure rerum libero facere accusantium sunt magni adipisci earum, aspernatur vero laborum eligendi tenetur quas! Fugit nemo suscipit et earum assumenda nesciunt! Eligendi maiores voluptate, vel, debitis neque, placeat excepturi deserunt fuga dolores praesentium laborum ipsam facilis. Harum vel vitae magni est pariatur a modi nostrum molestias facilis? Perferendis, aliquam? Explicabo beatae amet sapiente dolorem tenetur consequatur architecto soluta facilis, perferendis exercitationem libero consequuntur nemo unde delectus reiciendis iste? Voluptas, fuga perspiciatis consequuntur a recusandae, adipisci odio sint minima exercitationem id odit, praesentium illum at numquam dicta incidunt natus. Aliquid, pariatur commodi ea temporibus recusandae quas sint quisquam assumenda, laborum aperiam mollitia consequuntur deserunt iste esse, nostrum accusantium aspernatur optio aut eligendi fuga? Beatae natus expedita quod tempore ipsa et laborum ab rerum distinctio maiores, incidunt quam repellendus inventore soluta itaque assumenda dignissimos. Error enim facilis aliquid ipsam aperiam harum? Nesciunt iusto eveniet quidem aliquid omnis pariatur culpa maiores, voluptatibus necessitatibus voluptas quaerat asperiores dicta accusamus. Quas aliquam ipsum labore debitis accusantium, eveniet fuga velit, vero neque inventore facere, totam dolorem hic blanditiis? Vel quia veritatis quisquam optio architecto labore necessitatibus ullam aut sapiente perferendis quis suscipit delectus, laboriosam unde obcaecati facere dicta illo soluta, nisi iure vero! Beatae, dolorem impedit dolorum iste fuga qui aut voluptatem totam ducimus a inventore dolores quibusdam exercitationem nam aspernatur quod quae, natus corporis et est mollitia ea? At repudiandae ducimus iusto et eius veritatis cum voluptatum sit iste incidunt laborum quis natus, hic rerum iure, harum illo! Ipsam itaque voluptatibus sit velit, eaque sed dolorem facere, sint eius nemo provident in maxime magnam suscipit ab impedit, voluptatum totam reprehenderit adipisci blanditiis? Dolor praesentium quaerat iste incidunt sunt aliquam quos quasi repellat ea, veritatis ex reprehenderit cumque perferendis neque accusantium alias obcaecati iusto, eaque ut omnis natus assumenda animi architecto tempore! Expedita, tenetur nostrum commodi beatae voluptas neque? Tempora similique officiis reiciendis officia repudiandae debitis, ut aspernatur laudantium? Eveniet, itaque aliquam labore animi recusandae assumenda iste fugiat id iure laudantium nihil ea tempora asperiores eos quia velit. Tenetur accusamus repellat voluptate deserunt ad eaque, soluta laboriosam dicta dignissimos ullam ipsa, nostrum architecto necessitatibus temporibus excepturi sapiente asperiores nesciunt fugit, ipsum ratione blanditiis. Tempore reiciendis delectus dolores sint! Magnam autem eos quos tempora dolorem ipsum repellendus. Quidem voluptatem error asperiores ducimus nemo ea debitis accusantium rerum eum totam, quo quasi? Eligendi, doloremque deserunt est possimus dolorum eum id, at illum dolorem quos cumque explicabo. Voluptate, quas illum. Quas veritatis doloremque omnis optio ab, inventore maxime laboriosam hic corporis ea unde? Sapiente distinctio maiores qui illo. Ullam earum minus incidunt libero, voluptatem nisi vel hic fugiat soluta expedita mollitia. Dolores, placeat laudantium assumenda nesciunt tempore, voluptatibus soluta impedit fuga quidem sapiente quos consequuntur molestiae nihil vel rem enim atque autem odio perferendis aut animi debitis? Minus voluptatibus, accusamus, dolores saepe eaque expedita ratione asperiores, commodi reiciendis fugiat tempore itaque blanditiis ut. Totam iure praesentium similique. Repellendus consectetur iusto quos fuga eaque quibusdam cupiditate delectus nihil voluptatum itaque, quo similique. Eligendi atque velit illum ex consequuntur sed animi maiores dignissimos culpa. Minus, ad quia eum hic sint esse in saepe numquam, asperiores tempore sequi necessitatibus obcaecati tempora. Beatae odio, quidem voluptates accusamus, facere nulla quaerat assumenda cupiditate voluptatum et suscipit atque unde ex asperiores ad? Consequuntur aliquid enim dolorem nobis nam. Nulla fugiat corrupti quos, soluta tempora et repellat nam non, recusandae cum reiciendis quaerat blanditiis possimus doloribus facilis porro magni eaque in quas itaque ipsa, sit ut corporis! Id sunt pariatur similique blanditiis laudantium, facilis nihil repellendus dignissimos in reiciendis corporis nisi expedita, soluta ipsa quidem rem quis odit. Totam ex voluptas cum dignissimos voluptatibus dolores, blanditiis temporibus id, magnam eligendi nisi saepe sequi. Explicabo est necessitatibus laborum! Sunt cum ipsa dolores autem reiciendis eum animi accusantium magni nemo, odit molestiae quo incidunt dolor corrupti assumenda fugit at pariatur quibusdam a ratione molestias? Exercitationem molestias suscipit doloribus repudiandae ipsa. Impedit esse totam distinctio nulla? Quaerat cum, labore ab totam sit nobis quasi eum fugiat aperiam sint voluptatem molestiae molestias? Aut dicta expedita ratione soluta illum eligendi libero earum cupiditate!
 
 	</main>
 
 	
-	
 
 	<!-- Script-->
-<script src="js/jquery-3.4.1.min.js"></script>
+<!-- <script src="js/jquery-3.4.1.min.js"></script> -->
 <!-- Swiper JS -->
 <script src="js/swiper-bundle.min.js"></script>
+<!-- FANCYBOX -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 <!-- App JS -->
 <script src="js/app.min.js"></script>
 
