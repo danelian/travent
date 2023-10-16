@@ -1,0 +1,74 @@
+.events {
+  &bl {
+    .d-container {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      .heading {
+        margin-left: 240px;
+        width: calc(100% - 240px - 160px - 240px);
+      }
+      .swiper-nav {
+        margin: 12px 240px 0 auto;
+      }
+    }
+  }
+  &Swiper {
+    width: 100%;
+    height: 900px;
+    border-radius: 20px;
+    .swiper-slide {
+      height: calc(100% / 2) !important;
+    }
+  }
+  &-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 24px;
+    width: 100%;
+    height: 100%;
+    &__title {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      text-transform: uppercase;
+      text-align: center;
+      color: #ffffff;
+    }
+    .btn-arrow {
+      position: absolute;
+      right: 28px;
+      bottom: 28px;
+      width: 36px;
+      height: 36px;
+      transition: all .3s ease;
+    }
+    &__blur {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.40);
+      transition: all .3s ease;
+      z-index: -1;
+    }
+    &__img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+    &:hover {
+      .events-card__blur {
+        background-color: rgba(0, 0, 0, 0.60);
+      }
+    }
+  }
+}
