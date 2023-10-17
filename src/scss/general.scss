@@ -32,10 +32,10 @@ section {
 	padding: 0 var(--container-offset);
 	max-width: var(--container-width);
 }
-.d-container-full {
+.d-container-small {
 	margin: 0 auto;
 	padding: 0 var(--container-offset);
-	max-width: 100%;
+	max-width: 1400px;
 }
 .link-center {
 	display: flex;

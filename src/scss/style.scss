@@ -52,22 +52,7 @@
 /***** COMPONENTS GLOBAL *****/
 @import "blocks/header";
 @import "blocks/footer";
-// @import "blocks/breadcrumbs";
-// @import "blocks/pagination";
-// @import "blocks/tags";
-// @import "blocks/scroll-container";
-// @import "blocks/accordion";
-// @import "blocks/tabs";
-// @import "blocks/tooltip";
-// @import "blocks/hover-dpd";
-// @import "blocks/click-dpd";
-// @import "blocks/plyr";
-// @import "blocks/carousel";
-// @import "blocks/article";
 @import "blocks/sliders";
-// @import "blocks/form";
-// @import "blocks/modal";
-// @import "blocks/components.scss";
 
 /***** SECTIONS GLOBAL (Widgets) *****/
 @import "widgets/hero.scss";
@@ -76,3 +61,5 @@
 @import "widgets/eventsbl.scss";
 @import "widgets/service-head.scss";
 @import "widgets/servicesbl.scss";
+@import "widgets/page.scss";
+@import "widgets/about.scss";
