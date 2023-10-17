@@ -72,3 +72,74 @@
     }
   }
 }
+
+@include desktop {
+  .events {
+    &bl {
+      .d-container {
+        .heading {
+          margin-left: 140px;
+          width: calc(100% - 140px - 160px - 140px);
+        }
+        .swiper-nav {
+          margin-right: 140px;
+        }
+      }
+    }
+    &Swiper {
+      height: 400px;
+      .swiper-slide {
+        height: 100% !important;
+      }
+    }
+    &-card {
+      padding: 20px;
+      &__title {
+        font-size: 28px;
+      }
+      .btn-arrow {
+        right: 20px;
+        bottom: 20px;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .events {
+    &bl {
+      .d-container {
+        .heading {
+          margin-left: 0;
+          width: 100%;
+        }
+        .swiper-nav {
+          margin: 24px auto 0 auto;
+          order: 1;
+        }
+      }
+    }
+    &Swiper {
+      height: 300px;
+    }
+    &-card {
+      &__title {
+        font-size: 24px;
+      }
+      .btn-arrow {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .events {
+    &-card {
+      &__title {
+        font-size: 20px;
+      }
+    }
+  }
+}
