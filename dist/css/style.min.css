@@ -44,7 +44,8 @@ section {
 
 @media screen and (max-width: 1024px) {
   section {
-    margin-bottom: 70px;
+    padding-top: 48px;
+    padding-bottom: 52px;
   }
 }
 .d-container {
@@ -428,6 +429,25 @@ th {
   color: #000000;
 }
 
+@media screen and (max-width: 1024px) {
+  .heading {
+    margin-bottom: 40px;
+  }
+  .heading .section-title:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .section-title {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .heading {
+    margin-bottom: 24px;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+}
 /***** COMPONENTS GLOBAL *****/
 /*----header-----*/
 .header {
@@ -1025,6 +1045,42 @@ th {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 1440px) {
+  .main-services__cards {
+    gap: 20px;
+  }
+  .main-services__card {
+    padding: 28px 16px 20px 16px;
+  }
+  .main-services__card h3 {
+    font-size: 28px;
+  }
+  .main-services__card p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .main-services__cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main-services__cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+  }
+  .main-services__card {
+    border-radius: 20px;
+  }
+  .main-services__card h3 {
+    font-size: 24px;
+  }
+  .main-services__card p {
+    margin-top: 14px;
+    font-size: 14px;
+  }
+}
 .projectsbl {
   background: #F3F3F3;
 }
@@ -1120,6 +1176,57 @@ th {
   opacity: 1;
 }
 
+@media screen and (max-width: 1440px) {
+  .projectsbl .heading {
+    margin-right: 120px;
+  }
+  .projects-card {
+    padding: 20px;
+  }
+  .projects-card__title {
+    font-size: 28px;
+  }
+  .projects-card .tags {
+    left: 20px;
+    bottom: 20px;
+  }
+  .projects-card .btn-arrow {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .projectsbl .heading {
+    margin-right: 0px;
+  }
+  .projects-card__title {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .projectsbl .heading {
+    margin-right: 0;
+  }
+  .projectsbl__cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .projects-card__title,
+.projects-card .tags,
+.projects-card .btn-arrow {
+    opacity: 1;
+  }
+  .projects-card .btn-arrow {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .projectsbl__cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+  }
+}
 .eventsbl .d-container {
   display: flex;
   align-items: flex-start;

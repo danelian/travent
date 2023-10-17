@@ -18,3 +18,25 @@
 	text-transform: uppercase;
 	color: #000000;
 }
+
+@include tablet {
+	.heading {
+		margin-bottom: 40px;
+		.section-title {
+			&:not(:last-child) {
+				margin-bottom: 16px;
+			}
+		}
+	}
+	.section-title {
+		font-size: 36px;
+	}
+}
+@include mobile {
+	.heading {
+		margin-bottom: 24px;
+	}
+	.section-title {
+		font-size: 24px;
+	}
+}

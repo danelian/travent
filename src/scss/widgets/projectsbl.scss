@@ -96,3 +96,78 @@
     }
   }
 }
+
+@include desktop {
+  .projects {
+    &bl {
+      .heading {
+        margin-right: 120px;
+      }
+    }
+    &-card {
+      padding: 20px;
+      &__title {
+        font-size: 28px;
+      }
+      .tags {
+        left: 20px;
+        bottom: 20px;
+      }
+      .btn-arrow {
+        right: 20px;
+        bottom: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .projects {
+    &bl {
+      .heading {
+        margin-right: 0px;
+      }
+    }
+    &-card {
+      &__title {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .projects {
+    &bl {
+      .heading {
+        margin-right: 0;
+      }
+      &__cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+    }
+    &-card {
+      &__title,
+      .tags,
+      .btn-arrow {
+        opacity: 1;
+      }
+      .btn-arrow {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .projects {
+    &bl {
+      &__cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;
+      }
+    }
+  }
+}
