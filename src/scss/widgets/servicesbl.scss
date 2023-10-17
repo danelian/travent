@@ -1,0 +1,54 @@
+.servicesbl {
+  .heading {
+    text-align: center;
+  }
+  .d-container {
+    max-width: 1400px;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px 40px;
+  }
+  &__card {
+    padding: 20px 36px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #000;
+    border-radius: 20px;
+    border: 1px solid rgba(238, 238, 238, 0.50);
+    background: rgba(181, 181, 181, 0.12);
+    backdrop-filter: blur(11px);
+  }
+}
+
+@include tablet {
+  .servicesbl {
+    &__cards {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    &__card {
+      padding: 20px 28px;
+      font-size: 17px;
+      line-height: 1.4;
+    }
+  }
+}
+
+@include mobile {
+  .servicesbl {
+    &__cards {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 12px;
+    }
+    &__card {
+      padding: 16px 20px;
+      font-size: 16px;
+    }
+  }
+}
