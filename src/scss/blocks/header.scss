@@ -77,6 +77,7 @@
     top: 0;
     left: -100%;
     width: 370px;
+    max-width: 90%;
     height: 100vh;
     color: #fff;
     border-radius: 0px 20px 20px 0px;
@@ -178,4 +179,58 @@
 .nav__menu.show-menu {
   left: 0;
   z-index: 1000;
+}
+
+@include tablet {
+  .header {
+    &__logo {
+      width: 90px;
+      margin: 0 20px;
+    }
+    &__container {
+      padding-top: 24px;
+      height: auto;
+    }
+    &__bar {
+      &-btns {
+        display: none;
+      }
+    }
+  }
+  .nav {
+    &__toggle {
+      margin-top: 0;
+    }
+    &__list {
+      li {
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+        a {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  /* Lang */
+  .lang {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@include mobile {
+  .nav {
+    &__head {
+      flex-direction: column;
+      .logo {
+        margin-bottom: 16px;
+      }
+    }
+    &__contacts {
+      text-align: left;
+    }
+  }
 }
